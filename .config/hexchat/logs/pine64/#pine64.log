@@ -1,0 +1,63 @@
+**** BEGIN LOGGING AT Mon Aug 29 03:56:46 2022
+
+Aug 29 03:56:46 *	Now talking on #Pine64
+Aug 29 03:56:46 *	Topic for #Pine64 is: General discussion about Pine64. Device-specific discussion goes in other channels. See #pinebook, #pinephone, #Pinetime etc | The wiki always needs improvement! https://wiki.pine64.org
+Aug 29 03:56:46 *	Topic for #Pine64 set by abcde (Fri Jan 28 09:37:50 2022)
+Aug 29 03:56:48 *	thickcum has quit (Read error)
+Aug 29 03:57:43 *	thickcum (thickcum@Clk-69549F0D.ip-139-99-69.net) has joined
+Aug 29 03:58:05 *	thickcum has quit (Read error)
+Aug 29 03:58:18 *	thickcum (thickcum@Clk-69549F0D.ip-139-99-69.net) has joined
+Aug 29 03:58:58 *	thickcum has quit (Read error)
+Aug 29 03:58:59 FiSHLiM plugin unloaded
+**** ENDING LOGGING AT Mon Aug 29 03:58:59 2022
+
+**** BEGIN LOGGING AT Mon Aug 29 04:00:26 2022
+
+Aug 29 04:00:26 *	Now talking on #Pine64
+Aug 29 04:00:26 *	Topic for #Pine64 is: General discussion about Pine64. Device-specific discussion goes in other channels. See #pinebook, #pinephone, #Pinetime etc | The wiki always needs improvement! https://wiki.pine64.org
+Aug 29 04:00:26 *	Topic for #Pine64 set by abcde (Fri Jan 28 09:37:50 2022)
+Aug 29 04:00:26 <P64ProtocolBot>	[M] <6piz7wk> a) Release all the files needed to build and fork the hardware as open-source under modified GPLv3 license that states that the freedom to redistribute and use is restricted until the development cost is recovered with a transparent accounting for public review that can be used as a proof of fulfilling the license agreement (The general approach with OSHW hardware with proposed legal management)
+Aug 29 04:00:28 <P64ProtocolBot>	[M] <6piz7wk> b) Do not release any hardware files until the development cost is covered - Creality's approach e.g. see Creality Ender-3 on https://github.com/Creality3DPrinting/Ender-3
+Aug 29 04:00:30 <P64ProtocolBot>	[M] <6piz7wk> 
+Aug 29 04:00:31 <P64ProtocolBot>	[M] <6piz7wk> While adding a voluntary added cost to the store after the development has been paid and crowd sourcing options
+Aug 29 04:00:33 <P64ProtocolBot>	[M] <6piz7wk> 
+Aug 29 04:00:34 <P64ProtocolBot>	[M] <6piz7wk> Because this way PINE64 will be able to establish a sustainable income with passive public relation and marketing management to enable more work and redistribution of spare parts that are currently insufficient to make RockPro64 lesser alternative to raspberry pi in the EU
+Aug 29 04:01:07 *	thickcum has quit (Read error)
+Aug 29 04:01:09 <P64ProtocolBot>	[M] <6piz7wk> there are more economical adjustments that can be made e.g. the codeberg approach where people will be allowed to cooperate on the company's management by paying e.g. 5 EUR a month to join e.g. discourse where they can be an active part of the company
+Aug 29 04:01:18 <P64ProtocolBot>	[M] <6piz7wk> .. which i personally thing would be a great thing for PINE64
+Aug 29 04:01:25 *	thickcum (thickcum@Clk-69549F0D.ip-139-99-69.net) has joined
+**** ENDING LOGGING AT Mon Aug 29 04:01:25 2022
+
+**** BEGIN LOGGING AT Mon Aug 29 13:43:12 2022
+
+Aug 29 13:43:12 *	Now talking on #Pine64
+Aug 29 13:43:12 *	Topic for #Pine64 is: General discussion about Pine64. Device-specific discussion goes in other channels. See #pinebook, #pinephone, #Pinetime etc | The wiki always needs improvement! https://wiki.pine64.org
+Aug 29 13:43:12 *	Topic for #Pine64 set by abcde (Fri Jan 28 09:37:50 2022)
+Aug 29 13:43:35 *	libresurf has quit (Ping timeout: 180 seconds)
+Aug 29 13:45:10 *	oida has quit (Ping timeout: 180 seconds)
+Aug 29 13:58:51 *	mk2 (mk2@B45234FF.F752A048.192EFD37.IP) has joined
+Aug 29 13:59:47 *	oida (oida@Clk-88393521.dynamic.kabel-deutschland.de) has joined
+Aug 29 14:05:01 *	cristiioan has quit (Quit: cristiioan)
+Aug 29 14:06:11 <P64ProtocolBot>	[D] <distra> the jh7110 in star64 doesnt have eDP for display like the pinebook currently uses
+Aug 29 14:06:51 <P64ProtocolBot>	[D] <distra> and the mipi dsi only goes up to 1080p30hz
+Aug 29 14:07:14 <P64ProtocolBot>	[D] <distra> so it would need to use it's hdmi output
+Aug 29 14:09:12 *	d4rkn0d3z has quit (Quit: Lost terminal)
+Aug 29 14:12:49 *	CMoH|notebook has quit (Quit: Konversation terminated!)
+Aug 29 14:13:03 *	CMoH|notebook (cipi@93C011A.2B990E79.25DCD78.IP) has joined
+Aug 29 14:14:07 *	CMoH|notebook has quit (Quit: Konversation terminated!)
+Aug 29 14:14:23 *	CMoH|notebook (cipi@93C011A.2B990E79.25DCD78.IP) has joined
+Aug 29 14:15:03 *	CMoH|notebook has quit (Quit: Konversation terminated!)
+Aug 29 14:15:13 *	CMoH|notebook (cipi@93C011A.2B990E79.25DCD78.IP) has joined
+Aug 29 14:16:03 <P64ProtocolBot>	[M] <6piz7wk> "startup" hmm... concerning
+Aug 29 14:16:55 <P64ProtocolBot>	[M] <6piz7wk> lack of performance? i doubt it will be able to run any Desktop Environment without major issues
+Aug 29 14:23:28 *	Endermen1094 has quit (Ping timeout: 180 seconds)
+Aug 29 14:28:05 *	TheCreeper has quit (Read error)
+Aug 29 14:28:35 *	WoC has quit (Read error)
+Aug 29 14:33:34 *	Lord_of_Life_ (Lord@21AF33B0.8DC7C94D.FDD0E13A.IP) has joined
+Aug 29 14:35:01 *	Lord_of_Life has quit (Ping timeout: 180 seconds)
+Aug 29 14:35:01 *	Lord_of_Life_ is now known as Lord_of_Life
+Aug 29 14:39:08 *	doomquakekeen has quit (Ping timeout: 180 seconds)
+Aug 29 14:42:13 *	doomquakekeen (dqk@Clk-B6A0250E.w90-42.abo.wanadoo.fr) has joined
+Aug 29 14:45:22 *	midfavila (midfavila@A17397EB.2BDF76ED.E79EAE75.IP) has joined
+**** ENDING LOGGING AT Mon Aug 29 15:00:57 2022
+

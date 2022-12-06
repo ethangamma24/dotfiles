@@ -1,0 +1,34 @@
+{
+	"PressedPlay" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"RolledShop" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PlayedSpell" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PlayedMinion" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"SellMinion" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"StackedMinion" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"Interaction" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PressedAutoplay" : {
+		"__type" : "bool",
+		"value" : true
+	}
+}

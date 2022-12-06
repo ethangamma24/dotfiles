@@ -1,0 +1,34 @@
+T 1661760042 19*	Now talking on 22#pinephone
+T 1661760042 22*	Topic for 22#pinephone is: PinePhone and PinePhone Pro development and related topics go here. More info here: https://wiki.pine64.org/wiki/PinePhone https://wiki.pine64.org/wiki/PinePhone_Pro
+T 1661760042 22*	Topic for 22#pinephone set by 26fire219 (24Fri Oct 15 10:57:06 2021)
+T 1661760067 24*	thickcum has quit (Read error)
+T 1661794995 19*	Now talking on 22#pinephone
+T 1661794995 22*	Topic for 22#pinephone is: PinePhone and PinePhone Pro development and related topics go here. More info here: https://wiki.pine64.org/wiki/PinePhone https://wiki.pine64.org/wiki/PinePhone_Pro
+T 1661794995 22*	Topic for 22#pinephone set by 26fire219 (24Fri Oct 15 10:57:06 2021)
+T 1661795015 24*	libresurf has quit (Ping timeout: 180 seconds)
+T 1661795048 20<thetincan>30	has anyone been able to successfully charge a fully depleted battery with TowBoot installed? I'm having some real trouble with it
+T 1661795110 24*	oida has quit (Ping timeout: 180 seconds)
+T 1661795121 18<P64ProtocolBot18>	12[T] <mikaelm> Oh by the way, previously I mentioned some pixels were not visible on the external monitor -
+T 1661795122 18<P64ProtocolBot18>	12[T] <mikaelm> That was a monitor issue and fixed it.
+T 1661795165 18<P64ProtocolBot18>	04[D] <JC_Bass> I have officially join the pinephone club. Broke the 4th pin on the sim adapter because "plug it in and it works" wasn't fun enough and had to play with it one to many times.
+T 1661795231 18<P64ProtocolBot18>	04[D] <JC_Bass> From 15 minutes of googling it seems like this is a common problem. Ordered some good sim adapters to hopefully avoid this in the future.
+T 1661795284 18<P64ProtocolBot18>	04[D] <JC_Bass> What's the chance pf getting some kind of warranty? I don't mind replacing the mainboard or even just the sim tray if I could get ahold of one.
+T 1661795987 23*	oida (oida@Clk-88393521.dynamic.kabel-deutschland.de23) has joined
+T 1661796168 18<P64ProtocolBot18>	12[T] <mikaelm> What if the PPP's lower PCB with the USBC port breaks, is it sold as a replacement? @tl_lim
+T 1661796301 24*	cristiioan has quit (Quit: cristiioan)
+T 1661796457 18<megi118>	ideasquarebased: kmssink only works from linux console, you can't have another compositor using the DRM device
+T 1661796459 18<P64ProtocolBot18>	03[D] <Michael> "[M] <Phalio> what’s the output of `cat /sys/class/power_supply/ip5xxx-battery/voltage_ocv`?" It says  input/output error
+T 1661796613 23*	mk2 (mk2@B45234FF.F752A048.192EFD37.IP23) has joined
+T 1661796726 18<P64ProtocolBot18>	03[M] <Phalio> @Michael that usually means that the keyboard battery is empty or was shut off with the button. is that with or without a charging cable plugged into the keyboard?
+T 1661796768 18<P64ProtocolBot18>	03[D] <Michael> Both
+T 1661796935 18<P64ProtocolBot18>	12[T] <mikaelm> ApEk: Mobian bundles version 102.2 . What's the most straightforward way for me to get hold of release 105 or later (re @p64protocolbot: [D] <ApEk> mikaelm, I believe that bug is why hw accel is not enabled in firefox for ppp. (at least until branch 105 release))
+T 1661796976 18<P64ProtocolBot18>	12[T] <mikaelm> hmm there can be backports hmm
+T 1661797202 18<P64ProtocolBot18>	03[D] <Michael> I dont know if its just stuck in sleep mode or something but it was fully charged before i put it in sleep mode so its either stuck or something on the charging board is fried.
+T 1661797601 18<P64ProtocolBot18>	12[T] <ideasquarebased> @megi1 i am running from console
+T 1661797685 24*	TheCreeper has quit (Read error)
+T 1661798016 23*	Lord_of_Life_ (Lord@21AF33B0.8DC7C94D.FDD0E13A.IP23) has joined
+T 1661798050 18<P64ProtocolBot18>	12[T] <ideasquarebased> 
+T 1661798101 24*	Lord_of_Life has quit (Ping timeout: 180 seconds)
+T 1661798101 24*	28Lord_of_Life_ is now known as 18Lord_of_Life
+T 1661798348 24*	doomquakekeen has quit (Ping timeout: 180 seconds)
+T 1661798533 23*	doomquakekeen (dqk@Clk-B6A0250E.w90-42.abo.wanadoo.fr23) has joined

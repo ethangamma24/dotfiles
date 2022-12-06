@@ -1,0 +1,5 @@
+2022/11/03-11:50:01.902 6295 Reusing MANIFEST /home/thetincan/.config/via-nativia/Local Storage/leveldb/MANIFEST-000001
+2022/11/03-11:50:01.904 6295 Recovering log #13
+2022/11/03-11:50:01.904 6295 Level-0 table #16: started
+2022/11/03-11:50:01.908 6295 Level-0 table #16: 20425 bytes OK
+2022/11/03-11:50:01.911 6295 Delete type=0 #13

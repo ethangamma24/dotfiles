@@ -1,0 +1,25 @@
+00:00:00.208557 VirtualBox GUI VM Selector Window 6.1.37 r153395 linux.amd64 (Aug 27 2022 00:35:25) release log
+00:00:00.208558 Log opened 2022-08-29T19:22:43.545853000Z
+00:00:00.208559 Build Type: release
+00:00:00.208562 OS Product: Linux
+00:00:00.208562 OS Release: 5.18.19-200.fc36.x86_64
+00:00:00.208563 OS Version: #1 SMP PREEMPT_DYNAMIC Sun Aug 21 15:52:59 UTC 2022
+00:00:00.208585 DMI Product Name: MS-7C02
+00:00:00.208591 DMI Product Version: 1.0
+00:00:00.208597 Firmware type: UEFI
+00:00:00.208677 Secure Boot: Disabled
+00:00:00.208705 Host RAM: 32042MB (31.2GB) total, 29432MB (28.7GB) available
+00:00:00.208709 Executable: /opt/VirtualBox/VirtualBox
+00:00:00.208709 Process ID: 9306
+00:00:00.208709 Package type: LINUX_64BITS_GENERIC
+00:00:00.208731 Qt version: 5.6.1
+00:00:00.213691 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.213705 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.449082 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1080x1112 x 1920x1048
+00:00:00.452278 refreshCertificates/#1: InMem.Cert.TbsCertificate.T3.Extensions.papItems[#].ExtnValue.NameConstraints.T0.PermittedSubtrees.papItems[#]: Unexpected sequence type/flags: 0x2/0x80 (expected 0x10/0x20)
+00:00:00.454150 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 0x797 x 1080x1920
+00:00:00.458526 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 2 work area is actually resized to: 1080x0 x 1920x1080
+00:00:01.943953 convertVerifyAndAddPemCertificateToStore: cbData=0x1c5fb expected 0x4d7
+00:00:01.944749 refreshCertificates/#3: Found 0/135 SSL certs we/you trust (previously 0/0).
+00:00:28.454612 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:51.600406 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0

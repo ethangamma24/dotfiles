@@ -1,0 +1,22 @@
+**** BEGIN LOGGING AT Mon Aug 29 03:56:44 2022
+
+Aug 29 03:56:44 *	Connecting to irc.pine64.org (91.219.133.83:6697)
+Aug 29 03:56:45 *	* Subject: /C=US/O=Internet Security Research Group/CN=ISRG Root X1
+Aug 29 03:56:45 *	* Issuer: /C=US/O=Internet Security Research Group/CN=ISRG Root X1
+Aug 29 03:56:45 *	* Subject: /C=US/O=Let's Encrypt/CN=R3
+Aug 29 03:56:45 *	* Issuer: /C=US/O=Internet Security Research Group/CN=ISRG Root X1
+Aug 29 03:56:45 *	* Subject: /CN=irc.pine64.org
+Aug 29 03:56:45 *	* Issuer: /C=US/O=Let's Encrypt/CN=R3
+Aug 29 03:56:45 *	* Certification info:
+Aug 29 03:56:45 *	  Subject:
+Aug 29 03:56:45 *	    CN=irc.pine64.org
+Aug 29 03:56:45 *	  Issuer:
+Aug 29 03:56:45 *	    C=US
+Aug 29 03:56:45 *	    O=Let's Encrypt
+Aug 29 03:56:45 *	    CN=R3
+Aug 29 03:56:45 *	  Public key algorithm: rsaEncryption (2048 bits)
+Aug 29 03:56:45 *	  Sign algorithm sha256WithRSAEncryption
+Aug 29 03:56:45 *	  Valid since Aug 21 14:41:58 2022 GM to Nov 19 14:41:57 2022 GM
+Aug 29 03:56:45 *	* Cipher info:
+Aug 29 03:56:45 *	  Version: TLSv1.3, cipher TLS_CHACHA20_POLY1305_SHA256 (256 bits)
+Aug 29 03:56:45 *	Connected. Now logging in.
