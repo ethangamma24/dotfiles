@@ -24,6 +24,11 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('raimondi/delimitmate')
+  use('christoomey/vim-tmux-navigator')
+  use('vim-airline/vim-airline')
+  use('vim-airline/vim-airline-themes')
+  use('edkolev/tmuxline.vim')
+  use('jiangmiao/auto-pairs')
 
   -- LSP Section
   use {
