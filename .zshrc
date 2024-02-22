@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+[ -z "$PS1" ] && return
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/thetincan/.oh-my-zsh"
@@ -101,7 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias update="sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y"
 alias cp="cp -i"
+alias cd="z"
 alias ll="ls -alF"
+alias gh="history | grep"
+alias vim="nvim"
+alias goodnight="update && shutdown now"
+alias shoot="thefuck"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -112,7 +118,24 @@ if [ -d "$HOME/platform-tools" ] ; then
     PATH="$HOME/platform-tools:$PATH"
 fi
 
+# functions
+function cd {
+    builtin cd "$@" && ls -F
+}
+
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/bin/scli
 export PATH=$HOME/.local/bin:$PATH
 
+eval "$(zoxide init zsh)"
+
 neofetch
+
+# bun completions
+[ -s "/home/thetincan/.bun/_bun" ] && source "/home/thetincan/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval $(thefuck --alias)
