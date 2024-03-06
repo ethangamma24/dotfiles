@@ -44,9 +44,29 @@ require('lazy').setup {
 
   require 'kickstart/plugins/treesitter',
 
+  require 'kickstart.plugins.debug',
+
+  require 'kickstart.plugins.indent_line',
+
   -- Other plugins
   -- Gotta figure out what's going wrong with harpoon lol
   -- require 'custom/plugins/harpoon',
+
+  require 'custom.plugins.fugitive',
+
+  -- require 'custom.plugins.undotree',
+
+  require 'custom.plugins.delimitmate',
+
+  require 'custom.plugins.vim-airline',
+
+  require 'custom.plugins.vim-airline-themes',
+
+  require 'custom.plugins.tmuxline',
+
+  require 'custom.plugins.vim-tmux-navigator',
+
+  require 'custom.plugins.auto-pairs',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
@@ -57,9 +77,6 @@ require('lazy').setup {
   --  Here are some example plugins that I've included in the kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
