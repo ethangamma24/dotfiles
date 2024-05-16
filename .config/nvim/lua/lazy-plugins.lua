@@ -49,8 +49,7 @@ require('lazy').setup {
   require 'kickstart.plugins.indent_line',
 
   -- Other plugins
-  -- Gotta figure out what's going wrong with harpoon lol
-  -- require 'custom/plugins/harpoon',
+  require 'custom.plugins.harpoon',
 
   require 'custom.plugins.fugitive',
 
@@ -67,6 +66,14 @@ require('lazy').setup {
   require 'custom.plugins.vim-tmux-navigator',
 
   require 'custom.plugins.auto-pairs',
+
+  require 'custom.plugins.vim-terraform',
+
+  require 'custom.plugins.nvim-neotest',
+
+  require 'custom.plugins.vim-be-good',
+
+  require 'custom.plugins.oil-nvim',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and

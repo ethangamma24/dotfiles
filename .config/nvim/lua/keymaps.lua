@@ -33,9 +33,10 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+-- Commenting these out so I can use the command for oil.nvim
+-- vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+-- vim.keymap.set('n', '<leader>pv', ':Ex<CR>')
 
-vim.keymap.set('n', '<leader>pv', ':Ex<CR>')
 vim.keymap.set('n', '<leader>u', ':UndotreeShow<CR>')
 
 -- Allows you to move highlighted lines in visual mode, automatically
@@ -94,6 +95,13 @@ vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod ?x %<CR>', { silent = true })
+
+-- Terraform commands
+
+vim.keymap.set('n', '<leader>ti', ':!terraform init<CR>', opts)
+vim.keymap.set('n', '<leader>tv', ':!terraform validate<CR>', opts)
+vim.keymap.set('n', '<leader>tp', ':!terraform plan<CR>', opts)
+vim.keymap.set('n', '<leader>taa', ':!terraform apply -auto-approve<CR>', opts)
 
 -- vim.keymap.set("n", "<leader><leader>", function()
 --    vim.cmd("so")
