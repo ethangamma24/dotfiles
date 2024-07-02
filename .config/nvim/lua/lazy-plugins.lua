@@ -75,6 +75,16 @@ require('lazy').setup {
 
   require 'custom.plugins.oil-nvim',
 
+  require 'custom.plugins.hardtime',
+
+  require 'custom.plugins.precognition',
+
+  require 'custom.plugins.codeium',
+
+  require 'custom.plugins.trouble',
+
+  require 'custom.plugins.surround',
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- put them in the right spots if you want.
