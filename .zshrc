@@ -107,7 +107,6 @@ alias ll="ls -alF"
 alias gh="history | grep"
 alias vim="nvim"
 alias goodnight="update && shutdown now"
-alias shoot="thefuck"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -137,5 +136,3 @@ neofetch
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-eval $(thefuck --alias)
