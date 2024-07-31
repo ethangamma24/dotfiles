@@ -103,6 +103,9 @@ vim.keymap.set('n', '<leader>tv', ':!terraform validate<CR>', opts)
 vim.keymap.set('n', '<leader>tp', ':!terraform plan<CR>', opts)
 vim.keymap.set('n', '<leader>taa', ':!terraform apply -auto-approve<CR>', opts)
 
+-- Open vsplit with <M-v>
+vim.keymap.set('n', '<M-v>', ':vsplit<CR>')
+
 -- vim.keymap.set("n", "<leader><leader>", function()
 --    vim.cmd("so")
 -- end)
