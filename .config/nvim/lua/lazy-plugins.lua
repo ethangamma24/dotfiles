@@ -85,6 +85,25 @@ require('lazy').setup {
 
   require 'custom.plugins.surround',
 
+  require 'custom.plugins.jq',
+
+  require 'custom.plugins.cheatsheet',
+
+  -- Games
+  -- require 'custom.plugins.tetris',
+
+  require 'custom.plugins.nvimesweeper',
+
+  require 'custom.plugins.killersheep',
+
+  require 'custom.plugins.playtime',
+
+  require 'custom.plugins.cellular-automaton',
+
+  require 'custom.plugins.blackjack',
+
+  require 'custom.plugins.sudoku',
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- put them in the right spots if you want.
