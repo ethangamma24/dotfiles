@@ -85,6 +85,8 @@ require('lazy').setup {
 
   require 'custom.plugins.surround',
 
+  require 'custom.plugins.cheatsheet',
+
   -- Reaper plugin
   -- require 'custom.plugins.reaper',
 
