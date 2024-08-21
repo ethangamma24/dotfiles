@@ -79,7 +79,7 @@ require('lazy').setup {
 
   require 'custom.plugins.precognition',
 
-  require 'custom.plugins.codeium',
+  -- require 'custom.plugins.codeium',
 
   require 'custom.plugins.trouble',
 
