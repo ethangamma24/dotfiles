@@ -1,0 +1,4 @@
+#!/bin/bash
+
+size=$1
+sed -i "/size\ =/c\size\ =\ $size" ~/.config/alacritty/alacritty.toml
