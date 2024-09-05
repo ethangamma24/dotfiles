@@ -83,10 +83,10 @@ vim.keymap.set('i', '<C-c>', '<Esc>')
 vim.keymap.set('n', 'Q', '<nop>')
 -- Same for record, I never use it and just always get trapped in it
 vim.keymap.set('n', 'q', '<nop>')
-vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
-vim.keymap.set('n', '<leader>f', function()
-  vim.lsp.buf.format()
-end)
+-- vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
+-- vim.keymap.set('n', '<leader>f', function()
+--   vim.lsp.buf.format()
+-- end)
 
 vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz')
@@ -95,6 +95,23 @@ vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod ?x %<CR>', { silent = true })
+
+-- Neogit Commands
+-- vim.keymap.set('n', '<leader>gs', ':Neogit<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gs', function()
+  require('FTerm').run { 'vim', '.', '-c', 'Neogit' }
+end, { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gc', ':Neogit commit<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gp', ':Neogit pull<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gP', ':Neogit push<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gb', ':Telescope git_branches<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gB', ':G blame<CR>', { silent = true, noremap = true })
+
+-- Fterm Commands
+vim.keymap.set('n', '<leader>tt', ':lua require("FTerm").toggle()<CR>', { silent = true, noremap = true })
+vim.keymap.set('t', '<leader>tt', '<C-\\><C-n>:lua require("FTerm").toggle()<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>tn', ':lua require("FTerm").new()<CR>', { silent = true, noremap = true })
+vim.keymap.set('t', '<leader>tn', '<C-\\><C-n>:lua require("FTerm").new()<CR>', { silent = true, noremap = true })
 
 -- Terraform commands
 

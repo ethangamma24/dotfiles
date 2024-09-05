@@ -51,7 +51,7 @@ require('lazy').setup {
   -- Other plugins
   require 'custom.plugins.harpoon',
 
-  require 'custom.plugins.fugitive',
+  require 'custom.plugins.neogit',
 
   -- require 'custom.plugins.undotree',
 
@@ -88,6 +88,10 @@ require('lazy').setup {
   require 'custom.plugins.jq',
 
   require 'custom.plugins.cheatsheet',
+
+  require 'custom.plugins.obsidian',
+
+  require 'custom.plugins.fterm',
 
   -- Games
   -- require 'custom.plugins.tetris',

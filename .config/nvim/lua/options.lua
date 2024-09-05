@@ -85,3 +85,5 @@ vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = '80'
 
 vim.g['airline_theme'] = 'base16_gruvbox_dark_hard'
+
+vim.o.conceallevel = 2
