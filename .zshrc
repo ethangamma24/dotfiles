@@ -97,6 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+# SetOpts
+setopt hist_ignore_space
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -118,7 +121,7 @@ alias ld='eza -lD'
 alias lf='eza -lF --color=always | grep -v /'
 alias lh='eza -dl .* --group-directories-first'
 alias ll='eza -al --group-directories-first'
-alias ls='eza -alF --color=always --sort=size | grep -v /'
+alias ls='eza -alF --color=always --sort=size'
 alias lt='eza -al --sort=modified'
 
 # NMI Lambda commands
