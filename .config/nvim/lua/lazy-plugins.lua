@@ -93,6 +93,12 @@ require('lazy').setup {
 
   require 'custom.plugins.fterm',
 
+  require 'custom.plugins.treesitter-context',
+
+  require 'custom.plugins.renamer',
+
+  require 'custom.plugins.leetcode',
+
   -- Games
   -- require 'custom.plugins.tetris',
 

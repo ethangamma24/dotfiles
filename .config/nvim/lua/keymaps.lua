@@ -93,26 +93,31 @@ vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
-vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod ?x %<CR>', { silent = true })
 
 -- Neogit Commands
-vim.keymap.set('n', '<leader>gs', ':Neogit<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gs', ':Neogit<CR>', { silent = true, noremap = true, desc = 'Open Neogit' })
 -- vim.keymap.set('n', '<leader>gs', function()
 --   require('FTerm').run { ' ', 'vim', '.', '-c', 'Neogit' }
 -- end, { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>gc', ':Neogit commit<CR>', { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>gp', ':Neogit pull<CR>', { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>gP', ':Neogit push<CR>', { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>gb', ':Telescope git_branches<CR>', { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>gB', ':G blame<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>gc', ':Neogit commit<CR>', { silent = true, noremap = true, desc = 'Neogit Commit' })
+vim.keymap.set('n', '<leader>gp', ':Neogit pull<CR>', { silent = true, noremap = true, desc = 'Neogit Pull' })
+vim.keymap.set('n', '<leader>gP', ':Neogit push<CR>', { silent = true, noremap = true, desc = 'Neogit Push' })
+vim.keymap.set('n', '<leader>gb', ':Telescope git_branches<CR>', { silent = true, noremap = true, desc = 'Neogit Branches' })
+vim.keymap.set('n', '<leader>gB', ':G blame<CR>', { silent = true, noremap = true, desc = 'Neogit Blame' })
 
 -- Fterm Commands
-vim.keymap.set('n', '<leader>tt', ':lua require("FTerm").toggle()<CR>', { silent = true, noremap = true })
-vim.keymap.set('t', '<leader>tt', '<C-\\><C-n>:lua require("FTerm").toggle()<CR>', { silent = true, noremap = true })
-vim.keymap.set('n', '<leader>tn', ':lua require("FTerm").new()<CR>', { silent = true, noremap = true })
-vim.keymap.set('t', '<leader>tn', '<C-\\><C-n>:lua require("FTerm").new()<CR>', { silent = true, noremap = true })
-vim.keymap.set('t', '<leader>te', '<C-\\><C-n>:lua require("FTerm").exit()<CR>', { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>tt', ':lua require("FTerm").toggle()<CR>', { silent = true, noremap = true, desc = 'Toggle FTerm' })
+vim.keymap.set('t', '<leader>tt', '<C-\\><C-n>:lua require("FTerm").toggle()<CR>', { silent = true, noremap = true, desc = 'Toggle FTerm' })
+vim.keymap.set('n', '<leader>tn', ':lua require("FTerm").new()<CR>', { silent = true, noremap = true, desc = 'New FTerm' })
+vim.keymap.set('t', '<leader>tn', '<C-\\><C-n>:lua require("FTerm").new()<CR>', { silent = true, noremap = true, desc = 'New FTerm' })
+vim.keymap.set('t', '<leader>te', '<C-\\><C-n>:lua require("FTerm").exit()<CR>', { silent = true, noremap = true, desc = 'Exit FTerm' })
+
+-- Rename Commands
+vim.keymap.set('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true, desc = 'Rename string under cursor' })
+vim.keymap.set('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true, desc = 'Rename string under cursor' })
+vim.keymap.set('v', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true, desc = 'Rename string under cursor' })
 
 -- Terraform commands
 
@@ -122,7 +127,8 @@ vim.keymap.set('n', '<leader>tp', ':!terraform plan<CR>', opts)
 vim.keymap.set('n', '<leader>taa', ':!terraform apply -auto-approve<CR>', opts)
 
 -- Open vsplit with <M-v>
-vim.keymap.set('n', '<M-v>', ':vsplit<CR>')
+vim.keymap.set('n', '<M-v>', ':vsplit<CR>', { desc = 'Vertical Split' })
+vim.keymap.set('n', '<M-h>', ':split<CR>', { desc = 'Horizontal Split' })
 
 -- Cheatsheet
 vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>')
