@@ -3,13 +3,13 @@
 [ -z "$PS1" ] && return
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/thetincan/.oh-my-zsh"
+export ZSH="/Users/ethanharmon/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lambda"
+ZSH_THEME="half-life"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,16 +97,35 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+# SetOpts
+setopt hist_ignore_space
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias update="sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y"
+#alias update="sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y"
 alias cp="cp -i"
 alias cd="z"
-alias ll="ls -alF"
 alias gh="history | grep"
 alias vim="nvim"
-alias goodnight="update && shutdown now"
+alias oldvim='NVIM_APPNAME="nvim.pre-kickstart" nvim'
+alias pip='pip3'
+alias zshconfig="vim ~/.zshrc && clear && source ~/.zshrc"
+
+# Yabai configs for laptop and docked
+alias yabai-laptop="source ~/.config/yabai/laptop/yabairc"
+alias yabai-docked="source ~/.config/yabai/docked/yabairc"
+
+# EZA aliases
+alias ld='eza -lD'
+alias lf='eza -lF --color=always | grep -v /'
+alias lh='eza -dl .* --group-directories-first'
+alias ll='eza -al --group-directories-first'
+alias ls='eza -alF --color=always --sort=size'
+alias lt='eza -al --sort=modified'
+
+# NMI Lambda commands
+alias zip-nmi="find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete && zip -r Archive.zip ."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -136,3 +155,4 @@ neofetch
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+

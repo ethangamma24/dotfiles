@@ -51,7 +51,7 @@ require('lazy').setup {
   -- Other plugins
   require 'custom.plugins.harpoon',
 
-  require 'custom.plugins.fugitive',
+  require 'custom.plugins.neogit',
 
   -- require 'custom.plugins.undotree',
 
@@ -89,6 +89,35 @@ require('lazy').setup {
 
   -- Reaper plugin
   -- require 'custom.plugins.reaper',
+
+  require 'custom.plugins.jq',
+
+  require 'custom.plugins.cheatsheet',
+
+  require 'custom.plugins.obsidian',
+
+  require 'custom.plugins.fterm',
+
+  require 'custom.plugins.treesitter-context',
+
+  require 'custom.plugins.renamer',
+
+  require 'custom.plugins.leetcode',
+
+  -- Games
+  -- require 'custom.plugins.tetris',
+
+  require 'custom.plugins.nvimesweeper',
+
+  require 'custom.plugins.killersheep',
+
+  require 'custom.plugins.playtime',
+
+  require 'custom.plugins.cellular-automaton',
+
+  require 'custom.plugins.blackjack',
+
+  require 'custom.plugins.sudoku',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
