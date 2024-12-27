@@ -136,3 +136,23 @@ vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>')
 -- vim.keymap.set("n", "<leader><leader>", function()
 --    vim.cmd("so")
 -- end)
+
+-- Boilerplate Text Insertion Commands
+
+-- -- PrintLn
+vim.keymap.set('n', '<leader>lpl', [[:lua InsertPrintLn()<CR>]], { noremap = true, silent = true })
+function InsertPrintLn()
+  local ext = vim.fn.expand '%:e' -- Get the file extension
+  if ext == 'go' then
+    vim.cmd 'GoInsertPrintln'
+  end
+end
+
+-- -- If Err != Nil
+vim.keymap.set('n', '<leader>enn', [[:lua InsertErrorNotNil()<CR>]], { noremap = true, silent = true })
+function InsertErrorNotNil()
+  local ext = vim.fn.expand '%:e' -- Get the file extension
+  if ext == 'go' then
+    vim.cmd 'GoInsertIfErrNotNil'
+  end
+end
