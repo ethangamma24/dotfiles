@@ -1,3 +1,0 @@
-return {
-  'alanfortlink/blackjack.nvim',
-}

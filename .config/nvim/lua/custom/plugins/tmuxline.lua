@@ -1,3 +1,0 @@
-return {
-  'edkolev/tmuxline.vim',
-}

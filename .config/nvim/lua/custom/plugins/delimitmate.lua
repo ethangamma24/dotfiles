@@ -1,3 +1,0 @@
-return {
-  'raimondi/delimitmate',
-}
