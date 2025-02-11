@@ -1,4 +1,3 @@
---  To check the current status of your plugins, run
 --    :Lazy
 --
 --  You can press `?` in this menu for help. Use `:q` to close the window
@@ -81,7 +80,9 @@ require('lazy').setup {
 
   require 'custom.plugins.precognition',
 
-  require 'custom.plugins.codeium',
+  -- require 'custom.plugins.codeium',
+
+  require 'custom.plugins.codecompanion',
 
   require 'custom.plugins.trouble',
 
