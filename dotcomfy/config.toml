@@ -1,7 +1,7 @@
 [dependencies]
-build-essential = { version = "latest" }
 cmake = { version = "latest" }
 fzf = { version = "latest" }
+gcc = { version = "latest" }
 git = { version = "latest" }
 hyprland = { steps = [ "git clone --recursive https://github.com/hyprwm/Hyprland", "make -C ./Hyprland all && sudo make -C ./Hyprland install" ] }
 nvim = { script = "nvim.sh" }
