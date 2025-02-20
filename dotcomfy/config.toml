@@ -1,9 +1,8 @@
 [dependencies]
 cmake = { version = "latest" }
 fzf = { version = "latest" }
-gcc = { version = "latest" }
 git = { version = "latest" }
-hyprland = { steps = [ "git clone --recursive https://github.com/hyprwm/Hyprland", "make -C ./Hyprland all && sudo make -C ./Hyprland install" ] }
+nvm = { steps = [ "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash" ] }
 nvim = { script = "nvim.sh" }
 ripgrep = { version = "14.1.1-1" }
 tmux = { post_install_script = "tmux.sh" }
