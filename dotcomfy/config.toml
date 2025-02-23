@@ -1,7 +1,9 @@
 [dependencies]
 cmake = { version = "latest", steps = [ "sudo apt install cmake" ] }
 fzf = { version = "latest", script = "fzf.sh" }
+gcc = { version = "latest" }
 git = { version = "latest" }
+hyprland = { steps = [ "git clone --recursive https://github.com/hyprwm/Hyprland", "make -C ./Hyprland all && sudo make -C ./Hyprland install" ], needs = ["git", "cmake", "gcc"] }
 nvm = { steps = [ "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash", "export NVM_DIR=\"$HOME/.nvm\"", "[ -s \"$NVM_DIR/nvm.sh\" ]", "\\. \"$NVM_DIR/nvm.sh\"" ], script = "nvm.sh" }
 nvim = { script = "nvim.sh" }
 ripgrep = { version = "14.1.1-1" }
