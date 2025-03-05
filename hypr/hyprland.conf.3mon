@@ -13,7 +13,7 @@ source = ~/.config/hypr/autostart.conf
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
 monitor=DP-1,1920x1080@144,3840x1080,1
-monitor=DP-2,1920x1080@60,2760x780,1,transform,3
+monitor=DP-2,1920x1080@60,2760x390,1,transform,3
 monitor=HDMI-A-1,1920x1080@60,3840x0,1
 
 
@@ -129,14 +129,29 @@ misc {
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
 # windowrulev2 = nomaximizerequest, class:.* # You'll probably like this.
-windowrulev2 = workspace 2, class:^zen-desktop$
-windowrulev2 = workspace 3, class:^slack$
-windowrulev2 = workspace 4, class:^steam$
-windowrulev2 = workspace 10, class:^droidcam$
+windowrulev2 = workspace name:Signal, class:^signal-desktop$
+windowrulev2 = workspace name:Terminal, class:^alacritty$
+windowrulev2 = workspace name:Files, class:^nautilus$
+windowrulev2 = workspace name:Steam, class:^steam$
+windowrulev2 = workspace name:Zen-Secondary, class:^zen-browser$
+windowrulev2 = workspace name:Music, class:^rhythmbox$
+windowrulev2 = workspace name:Utilities, class:^droidcam$
+windowrulev2 = workspace name:Zen, class:^zen-browser$
 
 # App opacity
-windowrule = opacity 1.0 0.9, ^zen-desktop$
+windowrule = opacity 1.0 0.9, ^zen-browser$
 
+# Workspace settings
+workspace = 1, monitor:DP-1, default:true, defaultName:Zen
+workspace = 2, monitor:DP-1, defaultName:Signal
+workspace = 3, monitor:DP-1, defaultName:Terminal
+workspace = 4, monitor:DP-1, defaultName:Files
+workspace = 5, monitor:DP-1, defaultName:Obsidian
+workspace = 6, monitor:DP-1, defaultName:Discord
+workspace = 7, monitor:DP-1, defaultName:Steam
+workspace = 8, monitor:DP-2, default:true, defaultName:Zen-Secondary
+workspace = 9, monitor:HDMI-A-1, default:true, defaultName:Music
+workspace = 10, monitor:DP-1,  defaultName:Utilities
 
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 $mainMod = SUPER
