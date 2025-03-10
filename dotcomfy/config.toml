@@ -3,7 +3,7 @@ cmake = { version = "latest" }
 fzf = { version = "latest" }
 git = { version = "latest" }
 nvm = { steps = [ "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash", "export NVM_DIR=\"$HOME/.nvm\"", "[ -s \"$NVM_DIR/nvm.sh\" ]", "\\. \"$NVM_DIR/nvm.sh\"" ] }
-nvim = { script = "nvim.sh" }
+nvim = { script = "nvim.sh", needs = [ "zsh" ] }
 ripgrep = { version = "14.1.1-1" }
 tmux = { version = "latest", post_install_script = "tmux.sh" }
 zig = { version = "0.13.0" }
