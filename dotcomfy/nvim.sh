@@ -3,4 +3,5 @@ sudo rm -rf /opt/nvim
 sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> .zshrc
 source ~/.zshrc
+cat ~/.zshrc
 echo 'Done with nvim.sh'
