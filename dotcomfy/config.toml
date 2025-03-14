@@ -1,9 +1,9 @@
 [dependencies]
-cmake = { version = "latest" }
-fzf = { version = "latest" }
-git = { version = "latest" }
-nvm = { steps = [ "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash" ], needs = [ "zsh" ] }
-nvim = { script = "nvim.sh", needs = [ "zsh" ] }
+cmake = { version = "latest", needs = [ "fzf" ] }
+fzf = { version = "latest", needs = [ "git" ] }
+git = { version = "latest", needs = [ "cmake" ] }
+nvm = { steps = [ "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash" ] }
+nvim = { script = "nvim.sh", needs = [ "nvim" ] }
 ripgrep = { version = "14.1.1-1" }
 tmux = { version = "latest", post_install_script = "tmux.sh" }
 zig = { version = "0.13.0" }
