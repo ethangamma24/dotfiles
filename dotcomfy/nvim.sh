@@ -11,4 +11,5 @@ else
     echo 'No idea what shell is on this system'
 fi
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+nvim --version
 echo 'Done with nvim.sh'
