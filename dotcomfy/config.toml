@@ -1,3 +1,8 @@
+[authentication]
+username = "ethangamma24"
+email = "ethanharmon2018@gmail.com"
+ssh_file = "~/.ssh/id_ed25519"
+
 [dependencies]
 cmake = { version = "latest" }
 fzf = { version = "latest" }
