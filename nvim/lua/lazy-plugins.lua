@@ -104,6 +104,8 @@ require('lazy').setup {
 
   require 'custom.plugins.leetcode',
 
+  require 'custom.plugins.themery',
+
   -- Games
   -- require 'custom.plugins.tetris',
 

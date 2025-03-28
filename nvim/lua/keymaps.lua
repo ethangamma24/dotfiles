@@ -137,6 +137,9 @@ vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>')
 --    vim.cmd("so")
 -- end)
 
+-- Themery
+vim.keymap.set('n', '<leader>th', ':Themery<CR>', { desc = 'Change theme', noremap = true })
+
 -- Boilerplate Text Insertion Commands
 
 -- -- PrintLn
