@@ -2,7 +2,7 @@
 
 title = ghostty
 command = tmux attach
-shell-integration = zsh
+shell-integration = none
 clipboard-read = allow
 clipboard-write = allow
 background-opacity = 0.7
@@ -36,3 +36,5 @@ window-decoration = false
 window-theme = ghostty
 #custom-shader = ./shaders/bettercrt.glsl
 #custom-shader-animation = true
+
+command = /opt/homebrew/bin/nu --login --interactive
