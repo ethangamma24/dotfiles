@@ -34,5 +34,3 @@ $env.LS_COLORS = (vivid generate gruvbox-dark-soft)
 
 # Zoxide
 zoxide init nushell | save -f ~/.zoxide.nu
-
-oh-my-posh init nu

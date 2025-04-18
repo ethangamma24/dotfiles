@@ -89,5 +89,5 @@ let gruvbox_theme = {
     shape_nothing: $gruvbox_aqua
   }
 
-
-source ~/.oh-my-posh.nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
