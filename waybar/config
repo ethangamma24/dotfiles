@@ -1,213 +1,203 @@
-// =============================================================================
-//
-// Waybar configuration
-//
-// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
-//
-// =============================================================================
-
 {
-    // -------------------------------------------------------------------------
-    // Global configuration
-    // -------------------------------------------------------------------------
-
     "layer": "top",
-
-    // If height property would be not present, it'd be calculated dynamically
-    "height": 30,
-
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "ipc": false,
+    "reload_style_on_change": true,
+    "height": 0,
     "modules-left": [
-        // "sway/workspaces",
-        "hyprland/workspaces",
-        "sway/mode"
+        "custom/weather",
+        "custom/updates",
+        "idle_inhibitor",
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+        "custom/playerctl",
+        "pulseaudio",
+        "pulseaudio#microphone"
     ],
     "modules-right": [
-        "network",
-        "bluetooth",
-        "cpu",
-        "memory",
-        "battery",                  // use for compliant batteries
-        "backlight",
-        "idle_inhibitor",
-        "pulseaudio",
+        "keyboard-state",
         "tray",
-        "clock"
+        "hyprland/language",
+        "clock",
+        "custom/power"
     ],
-
-    // -------------------------------------------------------------------------
-    // Modules
-    // -------------------------------------------------------------------------
-
-    "battery": {
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format-charging": " {icon} {capacity}%", // Icon: bolt
-        "format": "{icon} {capacity}%",
-        "format-icons": [
-            "", // Icon: battery-empty
-            "", // Icon: battery-quarter
-            "", // Icon: battery-half
-            "", // Icon: battery-three-quarters
-            ""  // Icon: battery-full
-        ],
-        "tooltip": true
+    "hyprland/window": {
+        "format": "{}"
     },
-
-    "clock": {
-        "interval": 60,
-        "format": " {:%e %b %Y %H:%M}", // Icon: calendar-alt
-        "tooltip": true,
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>",
-        "on-click": "swaymsg exec \\$calendar"
-    },
-
-    "cpu": {
-        "interval": 10,
-        "format": " {usage}%", // Icon: microchip
-        "states": {
-            "warning": 70,
-            "critical": 90
-        },
-        "on-click": "swaymsg exec \"\\$term_float_landscape \\$cpu_mon\""
-    },
-
-    "memory": {
-        "interval": 10,
-        "format": " {}%", // Icon: memory
-        "states": {
-            "warning": 70,
-            "critical": 90
-        },
-        "on-click": "swaymsg exec \"\\$term_float_landscape \\$mem_mon\""
-    },
-
-    "network": {
-        "interval": 30,
-        "format-wifi": " {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": " {ifname}", // Icon: ethernet
-        "format-disconnected": "⚠ Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "swaymsg exec \\$term_float_portrait nmtui"
-    },
-
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>",
-        "tooltip": false
-    },
-
-    "sway/window": {
-        "format": "{}",
-        "max-length": 120
-    },
-
-    // "sway/workspaces": {
-    //     "all-outputs": false,
-    //     "disable-scroll": true,
-    //     "format": "{name}"
-    // },
-
     "hyprland/workspaces": {
-        "all-outputs": false,
-        "disable-scroll": true,
-        "format": "{name}"
+        "disable-scroll": false,
+        // "all-outputs": true,
+        "show-special": true,
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-click": "activate",
+        // "format": "{icon}",
+        // "format-icons": {
+        //       "1": "",
+        //       "2": "",
+        //       "3": "",
+        //       "4": "",
+        //       "5": "",
+        //       "6": "",
+        //       "urgent": "",
+        //       "default": "",
+        //       "magic": "",
+        // },
+        // "persistent-workspaces": {
+        //     "1": [],
+        //     "2": [],
+        //     "3": [],
+        //     "4": [],
+        //     "5": [],
+        // },
+        "sort-by-number": true,
     },
-
-    "backlight": {
-        "format": "{icon} {percent}%",
-        "format-icons": ["", ""],
-        "on-scroll-down": "light -A 1",
-        "on-scroll-up": "light -U 1"
+    "custom/updates": {
+        "format": "󰚰 {}",
+        "interval": 300,                     // every 5 min
+        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "kitty -e sudo pacman -Syu", // update system
+        "signal": 8
     },
-
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "Eng",
+    },
+    "keyboard-state": {
+        "numlock": false,
+        "scrolllock": false,
+        "capslock": true,
+        "format": "{icon}",
+        "device-path": "/dev/input/event19",
+        "format-icons": {
+            "locked": "󰘲",
+            "unlocked": ""
+        }
+    },   
     "idle_inhibitor": {
+        "tooltip": false,
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         }
     },
-
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 7
+    },
+    "clock": {
+        // "locale": "ru_RU.UTF-8",
+        "timezone": "America/New_York",
+        "format": "{:L%R  %m/%d %a}",
+        "tooltip-format": "<span font='Hack Nerd Font Bold 11'><tt><small>{calendar}</small></tt></span>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "format": {
+                "months":     "<span color='#98971a'><b>{}</b></span>",
+                "days":       "<span color='#ebdbb2'><b>{}</b></span>",
+                "weeks":      "<span color='#7c6f64'><b>W{}</b></span>",
+                "weekdays":   "<span color='#fabd2f'><b>{}</b></span>",
+                "today":      "<span color='#d79921'><b><u>{}</u></b></span>"
+            }
+        }
+    },
     "pulseaudio": {
-        //"scroll-step": 1,
-        "format": "{icon} {volume}%   {format_source}",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-muted": "",
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 2",
+        "on-scroll-down": "pamixer -d 2",
+        "scroll-step": 5,
         "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", ""]
-        },
-        "on-click": "swaymsg exec \\$pulseaudio"
+            "default": ["", "", ""]
+        }
     },
-
-    "temperature": {
-      "critical-threshold": 90,
-      "interval": 30,
-      "format": "{icon} {temperatureC}°C",
-      "format-icons": [
-          "", // Icon: temperature-empty
-          "", // Icon: temperature-quarter
-          "", // Icon: temperature-half
-          "", // Icon: temperature-three-quarters
-          ""  // Icon: temperature-full
-      ],
-      "tooltip": true
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "wlogout -b 5 --protocol layer-shell"
     },
-
-    "tray": {
-        "icon-size": 21,
-        "spacing": 5
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "tooltip": false,
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 2",
+        "on-scroll-down": "pamixer --default-source -d 2",
+        "scroll-step": 5
     },
-
-    "custom/pacman": {
-        "format": " {}",
-        "interval": 3600,
-        "exec-if": "[ $(pamac checkupdates -q | wc -l) -gt 0 ]",
-        "exec": "pamac checkupdates -q | wc -l",
-        "on-click": "pamac-manager --updates; pkill -RTMIN+4 waybar",
-        "signal": 4
-    },
-
-    "custom/menu": {
-        "format": "",
-        "on-click": "swaymsg exec \\$app_menu",
-        "tooltip": false
-    },
-
-    "custom/help": {
-        "format": "ﲉ",
-        "on-click": "swaymsg exec \\$help",
-        "tooltip": false
-    },
-
-    "bluetooth": {
-        "format": "",
-        "format-disabled": "",
-        "interval": 30,
-        "on-click": "blueman-manager",
-        "on-click-right": "rfkill toggle bluetooth",
-        "tooltip-format": "{}"
-    },
-
-    "custom/scratchpad": {
-        "interval": 10,
+    "custom/playerctl": {
+        "format": "{icon}  <span>{}</span>",
         "return-type": "json",
-        "format" : "{icon}",
+        "exec": "playerctl -p spotify metadata -f '{\"text\": \"{{markup_escape(title)}} - {{markup_escape(artist)}}  {{ duration(position) }}/{{ duration(mpris:length) }}\", \"tooltip\": \"{{markup_escape(title)}} - {{markup_escape(artist)}}  {{ duration(position) }}/{{ duration(mpris:length) }}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "tooltip": false,
+        "on-click-middle": "playerctl -p spotify previous",
+        "on-click": "playerctl -p spotify play-pause",
+        "on-click-right": "playerctl -p spotify next",
+        "on-click-forward": "playerctl -p spotify position 10+",
+        "on-click-backward": "playerctl -p spotify position 10-",
+        "on-scroll-up": "playerctl -p spotify volume 0.02+",
+        "on-scroll-down": "playerctl -p spotify volume 0.02-",
         "format-icons": {
-            "one": "",
-            "many": ""
+            "Paused": "",
+            "Playing": ""
+        }
+    },
+    "cava": {
+        "framerate": 40,
+        "autosens": 0,
+        "sensitivity": 38,
+        "bars": 18,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 12000,
+        "method": "pulse",
+        "hide_on_silence": false,
+        "sleep_timer": 5,
+        "source": "auto",
+        "stereo": false,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+        }
+    },
+    "battery": {
+        "bat": "hidpp_battery_0",
+        "interval": 1800,
+        "states": {
+                   "warning": 20,
+                   "critical": 10
         },
-        "exec": "scratchpad.sh",
-        "on-click": "swaymsg 'scratchpad show'"
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
     }
 }
