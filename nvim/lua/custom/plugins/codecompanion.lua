@@ -15,7 +15,6 @@ return {
         },
         sources = {
           default = { 'lsp', 'path', 'buffer', 'codecompanion' },
-          cmdline = {},
         },
       },
     },
