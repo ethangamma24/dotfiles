@@ -91,6 +91,7 @@ let gruvbox_theme = {
 
 # Aliases
 alias vim = nvim
+alias docker = podman
 
 source ~/.zoxide.nu
 mkdir ($nu.data-dir | path join "vendor/autoload")
