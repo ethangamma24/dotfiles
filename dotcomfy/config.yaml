@@ -1,0 +1,27 @@
+authentication:
+  username: ethangamma24
+  email: ethanharmon2018@gmail.com
+  ssh_file: ~/.ssh/id_ed25519
+dependencies:
+  cmake:
+    version: latest
+  fzf:
+    version: latest
+  git:
+    version: latest
+  nvm:
+    steps:
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
+        | bash
+  nvim:
+    script: nvim.sh
+  ripgrep:
+    version: 14.1.1-1
+  tmux:
+    version: latest
+    post_install_script: tmux.sh
+  zig:
+    version: 0.13.0
+sync_groups:
+  - branches: [desktop, laptop]
+    paths: [nvim/*]
