@@ -135,6 +135,7 @@ return {
         -- clangd = {},
         gopls = {},
         pylsp = {},
+        -- nu-lsp = {},
         -- rust_analyzer = {},
         terraformls = {},
         tflint = {},

@@ -1,0 +1,42 @@
+{
+  "data": {
+    "directory": ".opencode"
+  },
+  "providers": {
+    "openai": {
+      "apiKey": "your-api-key",
+      "disabled": false
+    }
+   }
+  },
+  "agents": {
+    "primary": {
+      "model": "gpt-4.1",
+      "maxTokens": 5000
+    },
+    "task": {
+      "model": "gpt-4.1",
+      "maxTokens": 5000
+    },
+    "title": {
+      "model": "gpt-4.1",
+      "maxTokens": 80
+    }
+  },
+  "lsp": {
+    "go": {
+      "disabled": false,
+      "command": "gopls"
+    },
+    "terraform": {
+      "disabled": false,
+      "command": "terraformls"
+    },
+  },
+  "shell": {
+    "path": "/bin/zsh",
+    "args": ["-l"]
+  },
+  "debug": false,
+  "debugLSP": false
+}

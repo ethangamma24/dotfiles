@@ -17,6 +17,32 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
+# Aliases
+alias cp = cp -i
+alias cd = z
+# alias gh = history | grep
+alias vim = nvim
+alias oldvim = NVIM_APPNAME="nvim.pre-kickstart" nvim
+alias pip = pip3
+alias nuconfig = ~/.config/nushell/config.nu; clear; source ~/.config/nushell/config.nu
+alias nuenv = ~/.config/nushell/env.nu; clear; source ~/.config/nushell/env.nu
+
+## Yabai configs for laptop and docked
+alias yabai-laptop = source ~/.config/yabai/laptop/yabairc
+alias yabai-docked = source ~/.config/yabai/docked/yabairc
+
+## EZA aliases
+# alias ld = eza -lD
+# alias lf = eza -lF --color=always | grep -v /
+# alias lh = eza -dl .* --group-directories-first
+# alias ll = eza -al --group-directories-first
+# alias ls = eza -alF --color=always --sort=size
+# alias lt = eza -al --sort=modified
+
+## NMI Lambda commands
+# alias zip-nmi = find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete && zip -r Archive.zip .
+
+
 # Carapace
 source ~/.cache/carapace/init.nu
 
@@ -91,3 +117,4 @@ let gruvbox_theme = {
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+tarship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
