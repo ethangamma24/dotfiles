@@ -37,4 +37,4 @@ window-theme = ghostty
 #custom-shader = ./shaders/bettercrt.glsl
 #custom-shader-animation = true
 
-command = /opt/homebrew/bin/nu --login --interactive
+command = /opt/homebrew/bin/nu --login --interactive --config ~/.config/nushell/config.nu --env-config ~/.config/nushell/env.nu
