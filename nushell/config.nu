@@ -19,7 +19,6 @@
 
 # Aliases
 alias cp = cp -i
-alias cd = z
 # alias gh = history | grep
 alias vim = nvim
 alias oldvim = NVIM_APPNAME="nvim.pre-kickstart" nvim
