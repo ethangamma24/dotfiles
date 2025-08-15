@@ -106,6 +106,8 @@ require('lazy').setup {
 
   require 'custom.plugins.themery',
 
+  require 'custom.plugins.cursor-agent',
+
   -- Games
   -- require 'custom.plugins.tetris',
 
