@@ -24,12 +24,10 @@ alias cd = z
 alias vim = nvim
 alias oldvim = NVIM_APPNAME="nvim.pre-kickstart" nvim
 alias pip = pip3
-alias nuconfig = ~/.config/nushell/config.nu; clear; source ~/.config/nushell/config.nu
-alias nuenv = ~/.config/nushell/env.nu; clear; source ~/.config/nushell/env.nu
 
 ## Yabai configs for laptop and docked
-alias yabai-laptop = source ~/.config/yabai/laptop/yabairc
-alias yabai-docked = source ~/.config/yabai/docked/yabairc
+# alias yabai-laptop = source ~/.config/yabai/laptop/yabairc
+# alias yabai-docked = source ~/.config/yabai/docked/yabairc
 
 ## EZA aliases
 # alias ld = eza -lD
@@ -42,6 +40,20 @@ alias yabai-docked = source ~/.config/yabai/docked/yabairc
 ## NMI Lambda commands
 # alias zip-nmi = find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete && zip -r Archive.zip .
 
+def nuconfig [] {
+    nvim ~/.config/nushell/config.nu
+    clear
+    source ~/.config/nushell/config.nu
+}
+
+def nuenv [] {
+    nvim ~/.config/nushell/env.nu
+    clear
+    source ~/.config/nushell/env.nu
+}
+
+# Path stuff
+$env.PATH = ($env.PATH | append "$env.HOME/.local/bin")
 
 # Carapace
 source ~/.cache/carapace/init.nu
