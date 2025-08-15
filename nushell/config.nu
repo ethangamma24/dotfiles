@@ -50,7 +50,7 @@ def nuenv [] {
 }
 
 # Path stuff
-$env.PATH = ($env.PATH | append "$env.HOME/.local/bin")
+$env.PATH = ($env.PATH | append "~/.local/bin")
 
 # Carapace
 source ~/.cache/carapace/init.nu
