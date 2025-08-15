@@ -127,4 +127,4 @@ let gruvbox_theme = {
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-tarship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
