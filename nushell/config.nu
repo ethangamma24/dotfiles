@@ -43,13 +43,11 @@ alias pip = pip3
 def nuconfig [] {
     nvim ~/.config/nushell/config.nu
     clear
-    source ~/.config/nushell/config.nu
 }
 
 def nuenv [] {
     nvim ~/.config/nushell/env.nu
     clear
-    source ~/.config/nushell/env.nu
 }
 
 # Path stuff
