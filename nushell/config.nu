@@ -125,6 +125,9 @@ let gruvbox_theme = {
     shape_nothing: $gruvbox_aqua
   }
 
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
