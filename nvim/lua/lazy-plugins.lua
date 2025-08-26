@@ -87,6 +87,8 @@ require('lazy').setup {
 
   require 'custom.plugins.cheatsheet',
 
+  require 'custom.plugins.markview',
+
   -- Reaper plugin
   -- require 'custom.plugins.reaper',
 
