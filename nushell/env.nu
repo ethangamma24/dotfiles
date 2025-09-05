@@ -18,8 +18,11 @@
 # them for future reference.
 
 # Path stuff
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
-$env.config.buffer_editor = "/opt/homebrew/bin/nvim"
+# $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+# $env.config.buffer_editor = "/opt/homebrew/bin/nvim"
+# $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
+use std "path add"
+path add "/home/linuxbrew/.linuxbrew/bin"
 
 # Nushell stuff
 $env.config.edit_mode = 'vi'
