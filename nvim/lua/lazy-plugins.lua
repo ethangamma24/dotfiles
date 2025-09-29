@@ -39,7 +39,7 @@ require('lazy').setup {
 
   require 'kickstart/plugins/todo-comments',
 
-  -- require 'kickstart/plugins/mini',
+  require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
 
@@ -89,6 +89,12 @@ require('lazy').setup {
   require 'custom.plugins.surround',
 
   require 'custom.plugins.cheatsheet',
+
+  require 'custom.plugins.noice',
+
+  require 'custom.plugins.nui',
+
+  require 'custom.plugins.snacks',
 
   -- Reaper plugin
   -- require 'custom.plugins.reaper',
