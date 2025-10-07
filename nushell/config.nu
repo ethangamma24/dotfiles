@@ -52,6 +52,7 @@ def nuenv [] {
 # Path stuff
 $env.PATH = ($env.PATH | append "~/.local/bin")
 $env.PATH = ($env.PATH | append "/opt/homebrew/opt/postgresql@17/bin")
+$env.PATH = ($env.PATH | append "/Users/ethanhorman/.opencode/bin")
 
 # Carapace
 source ~/.cache/carapace/init.nu
