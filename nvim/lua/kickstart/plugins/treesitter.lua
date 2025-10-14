@@ -5,7 +5,7 @@ return {
     branch = 'master',
     build = ':TSUpdate',
     main = 'nvim-treesitter.configs',
-    opts {
+    opts = {
       ensure_installed = { 'bash', 'c', 'go', 'html', 'lua', 'markdown', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
       auto_install = true,
