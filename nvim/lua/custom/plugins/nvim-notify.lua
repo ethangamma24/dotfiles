@@ -4,8 +4,8 @@ return {
     stages = 'fade',
     level = 'DEBUG',
     timeout = 150,
-    fps = 60,
-    background_colour = '#000000',
+    fps = 120,
+    background_colour = "#000000",
     max_height = function()
       return math.floor(vim.o.lines * 0.50)
     end,
