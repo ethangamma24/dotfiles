@@ -68,8 +68,6 @@ require('lazy').setup {
 
   require 'custom.plugins.vim-terraform',
 
-  require 'custom.plugins.neoscroll',
-
   require 'custom.plugins.nvim-neotest',
 
   require 'custom.plugins.vim-be-good',
