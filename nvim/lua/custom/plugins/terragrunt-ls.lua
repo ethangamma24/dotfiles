@@ -10,7 +10,7 @@ return {
         cmd_env = {
           -- If you want to see language server logs,
           -- set this to the path you want.
-          -- TG_LS_LOG = vim.fn.expand '/tmp/terragrunt-ls.log',
+          TG_LS_LOG = vim.fn.expand '/tmp/terragrunt-ls.log',
         },
       }
       if terragrunt_ls.client then
