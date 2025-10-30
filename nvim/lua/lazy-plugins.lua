@@ -110,6 +110,8 @@ require('lazy').setup {
 
   require 'custom.plugins.cursor-agent',
 
+  require 'custom.plugins.terragrunt-ls',
+
   -- Games
   -- require 'custom.plugins.tetris',
 

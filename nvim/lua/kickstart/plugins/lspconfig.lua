@@ -137,7 +137,7 @@ return {
         pylsp = {},
         -- nu-lsp = {},
         -- rust_analyzer = {},
-        terraformls = {},
+        tofu_ls = {},
         tflint = {},
         zls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
