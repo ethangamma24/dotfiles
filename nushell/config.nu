@@ -38,7 +38,7 @@ alias pip = pip3
 
 ## Commands
 def ap [profile: string] {
-    let-env AWS_PROFILE = $profile
+    load-env { AWS_PROFILE: $profile }
 }
 
 def nuconfig [] {
