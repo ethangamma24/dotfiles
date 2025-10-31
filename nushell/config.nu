@@ -37,7 +37,7 @@ alias pip = pip3
 # alias lt = eza -al --sort=modified
 
 ## Commands
-def ap [profile: string] {
+def-env ap [profile: string] {
     load-env { AWS_PROFILE: $profile }
 }
 
