@@ -36,8 +36,10 @@ alias pip = pip3
 # alias ls = eza -alF --color=always --sort=size
 # alias lt = eza -al --sort=modified
 
-## NMI Lambda commands
-# alias zip-nmi = find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete && zip -r Archive.zip .
+## Commands
+def ap [profile: string] {
+    $env.AWS_PROFILE = $"($profile)"
+}
 
 def nuconfig [] {
     nvim ~/.config/nushell/config.nu
@@ -48,6 +50,8 @@ def nuenv [] {
     nvim ~/.config/nushell/env.nu
     clear
 }
+
+
 
 # Path stuff
 $env.PATH = ($env.PATH | append "~/.local/bin")
