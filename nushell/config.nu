@@ -37,10 +37,6 @@ alias pip = pip3
 # alias lt = eza -al --sort=modified
 
 ## Commands
-def-env ap [profile: string] {
-    load-env { AWS_PROFILE: $profile }
-}
-
 def nuconfig [] {
     nvim ~/.config/nushell/config.nu
     clear
