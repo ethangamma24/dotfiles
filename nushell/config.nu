@@ -23,6 +23,7 @@ alias cp = cp -i
 alias vim = nvim
 alias oldvim = NVIM_APPNAME="nvim.pre-kickstart" nvim
 alias pip = pip3
+alias tg = terragrunt
 
 ## Yabai configs for laptop and docked
 # alias yabai-laptop = source ~/.config/yabai/laptop/yabairc
