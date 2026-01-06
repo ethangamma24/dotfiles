@@ -1,7 +1,7 @@
 authentication:
   username: ethangamma24
   email: ethanharmon2018@gmail.com
-  ssh_file: ~/.ssh/id_ed25519
+  ssh_file: ~/.ssh/id_rsa
 dependencies:
   cmake:
     version: latest
