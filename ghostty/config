@@ -26,3 +26,6 @@ keybind = f11=toggle_fullscreen
 
 # Other
 mouse-hide-while-typing = true
+
+# Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
+async-backend = epoll
