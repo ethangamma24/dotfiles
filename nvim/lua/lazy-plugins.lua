@@ -79,6 +79,8 @@ require('lazy').setup {
 
   require 'custom.plugins.supermaven',
 
+  require 'custom.plugins.opencode',
+
   -- require 'custom.plugins.codecompanion',
 
   require 'custom.plugins.trouble',
