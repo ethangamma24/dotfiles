@@ -108,7 +108,7 @@ require('lazy').setup {
 
   require 'custom.plugins.themery',
 
-  require 'custom.plugins.cursor-agent',
+  require 'custom.plugins.claude',
 
   require 'custom.plugins.terragrunt-ls',
 
