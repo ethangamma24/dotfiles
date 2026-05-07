@@ -47,7 +47,7 @@ require('lazy').setup {
   require 'kickstart.plugins.indent_line',
 
   -- Other plugins
-  require 'custom.plugins.harpoon',
+  -- require 'custom.plugins.harpoon',
 
   require 'custom.plugins.neogit',
 

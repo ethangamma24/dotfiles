@@ -46,6 +46,7 @@
   "nvimesweeper": { "branch": "master", "commit": "a75828943e4279cd850ad6a6cff4c49238997573" },
   "obsidian.nvim": { "branch": "main", "commit": "ae1f76a75c7ce36866e1d9342a8f6f5b9c2caf9b" },
   "oil.nvim": { "branch": "master", "commit": "0fcc83805ad11cf714a949c98c605ed717e0b83e" },
+  "opencode.nvim": { "branch": "main", "commit": "5ba16632fe3a7f66958f08dc008b74e626d55328" },
   "playtime.nvim": { "branch": "main", "commit": "d7427739558c74920f284ab370ba47bacacb8f97" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "popup.nvim": { "branch": "master", "commit": "b7404d35d5d3548a82149238289fa71f7f6de4ac" },
