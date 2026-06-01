@@ -130,6 +130,19 @@ let gruvbox_theme = {
 zoxide init nushell | save -f ~/.zoxide.nu
 source ~/.zoxide.nu
 
+def --env z [...rest: string] {
+  let dir = (
+    ^zoxide query --list --score
+    | ^fzf --height 40% --layout reverse --info inline
+        --nth '2..' --tac --no-sort --query ($rest | str join ' ')
+        --bind 'enter:become:echo {2..}'
+    | str trim
+  )
+  if ($dir | is-not-empty) {
+    cd $dir
+  }
+}
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
