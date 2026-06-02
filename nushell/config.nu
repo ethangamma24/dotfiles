@@ -134,7 +134,7 @@ def --env z [...rest: string] {
   let dir = (
     ^zoxide query --list --score
     | ^fzf --height 40% --layout reverse --info inline
-        --nth '2..' --tac --no-sort --query ($rest | str join ' ')
+        --nth '2..' --no-sort --query ($rest | str join ' ')
         --bind 'enter:become:echo {2..}'
     | str trim
   )
