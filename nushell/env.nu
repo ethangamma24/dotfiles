@@ -19,6 +19,7 @@
 
 # Path stuff
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/Users/ethanhorman/go/bin/')
 $env.config.buffer_editor = "/opt/homebrew/bin/nvim"
 
 # Nushell stuff
